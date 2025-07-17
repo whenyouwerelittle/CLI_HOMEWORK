@@ -1,2 +1,24 @@
-
+master를 main으로 변경
 git branch -m master main
+$ git clone https://github.com/whenyouwerelittle/CLI_HOMEWORK
+Cloning into 'CLI_HOMEWORK'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+$ git rm -f --cached CLI_HOMEWORK
+rm 'CLI_HOMEWORK'
+
+$ git remote add origin whenyouwerelittle/CLI_HOMEWORK
+error: remote origin already exists.
+
+
+git pull origin main whenyouwerelittle/CLI_HOMEWORK
+
+git clone : 모든 최신 소스를 받아오겠다.
+			remote + pull : 최초 연동
+git clone https://github.com/whenyouwerelittle/CLI_HOMEWORK
+
+git add .
+git commit -m "START OF CLI HOMEWORK"
