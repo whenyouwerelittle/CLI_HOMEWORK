@@ -184,3 +184,41 @@ Date:   Thu Jul 17 17:54:57 2025 +0900
 commit 74fbbac58ca16e395d7dadc4b5243b217d44b75c
 Author: whenyouwerelittle <whenyouwerelittle@gmail.com>
 
+warning: in the working copy of 'src/main/java/COM/Main.java', LF will be replaced by CRLF the next time Git touches it
+
+SBS@A-12 MINGW64 /c/workspace/CLI_HOMEWORK (main)
+$ git commit -m "no topic"
+[main be7ab3a] no topic
+ 5 files changed, 68 insertions(+), 9 deletions(-)
+ create mode 100644 src/main/java/COM/App.java
+ create mode 100644 src/main/java/COM/Container.java
+
+SBS@A-12 MINGW64 /c/workspace/CLI_HOMEWORK (main)
+$ git push origin main
+Enumerating objects: 21, done.
+Counting objects: 100% (21/21), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (12/12), 1.67 KiB | 1.67 MiB/s, done.
+Total 12 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/whenyouwerelittle/CLI_HOMEWORK
+   5a8edd1..be7ab3a  main -> main
+
+SBS@A-12 MINGW64 /c/workspace/CLI_HOMEWORK (main)
+$ git log
+commit be7ab3adaf3e21c717aad1fcdf11f711570c18db (HEAD -> main, origin/main, origin/HEAD)
+Author: whenyouwerelittle <whenyouwerelittle@gmail.com>
+Date:   Thu Jul 17 18:39:03 2025 +0900
+
+    no topic
+
+commit 5a8edd199b3a8a586af02363b7cea2ae7732dc59
+Author: whenyouwerelittle <whenyouwerelittle@gmail.com>
+Date:   Thu Jul 17 18:15:13 2025 +0900
+
+    file and folder clean up
+
+commit 1a568710c061dbae775a55ad15371e82f7881649
+Author: whenyouwerelittle <whenyouwerelittle@gmail.com>
+Date:   Thu Jul 17 17:54:57 2025 +0900
