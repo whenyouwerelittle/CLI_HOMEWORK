@@ -1,5 +1,4 @@
-master를 main으로 변경
-git branch -m master main
+SBS@A-12 MINGW64 /c/workspace/CLI_HOMEWORK (main)                                                                                                                
 $ git clone https://github.com/whenyouwerelittle/CLI_HOMEWORK
 Cloning into 'CLI_HOMEWORK'...
 remote: Enumerating objects: 3, done.
@@ -7,18 +6,143 @@ remote: Counting objects: 100% (3/3), done.
 remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
 Receiving objects: 100% (3/3), done.
 
+SBS@A-12 MINGW64 /c/workspace/CLI_HOMEWORK (main)                                                                                                                
+$ git add .
+warning: adding embedded git repository: CLI_HOMEWORK
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> CLI_HOMEWORK
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached CLI_HOMEWORK
+hint:
+hint: See "git help submodule" for more information.
+hint: Disable this message with "git config set advice.addEmbeddedRepo false"
+
+SBS@A-12 MINGW64 /c/workspace/CLI_HOMEWORK (main)                                                                                                                
+$ git rm --cached CLI_HOMEWORK
+error: the following file has staged content different from both the
+file and the HEAD:
+    CLI_HOMEWORK
+(use -f to force removal)
+
+SBS@A-12 MINGW64 /c/workspace/CLI_HOMEWORK (main)                                                                                                                
 $ git rm -f --cached CLI_HOMEWORK
 rm 'CLI_HOMEWORK'
 
+SBS@A-12 MINGW64 /c/workspace/CLI_HOMEWORK (main)                                                                                                                
+$ git pull origin main https://github.com/whenyouwerelittle/CLI_HOMEWORK
+fatal: invalid refspec 'https://github.com/whenyouwerelittle/CLI_HOMEWORK'
+
+SBS@A-12 MINGW64 /c/workspace/CLI_HOMEWORK (main)                                                                                                                
+gi
+
+SBS@A-12 MINGW64 /c/workspace/CLI_HOMEWORK (main)                                                                                                                
 $ git remote add origin whenyouwerelittle/CLI_HOMEWORK
 error: remote origin already exists.
 
+SBS@A-12 MINGW64 /c/workspace/CLI_HOMEWORK (main)                                                                                                                
+$ git pull origin main whenyouwerelittle/CLI_HOMEWORK
+fatal: couldn't find remote ref whenyouwerelittle/CLI_HOMEWORK
 
-git pull origin main whenyouwerelittle/CLI_HOMEWORK
+SBS@A-12 MINGW64 /c/workspace/CLI_HOMEWORK (main)                                                                                                                
+$ git add .
+warning: adding embedded git repository: CLI_HOMEWORK
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> CLI_HOMEWORK
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached CLI_HOMEWORK
+hint:
+hint: See "git help submodule" for more information.
+hint: Disable this message with "git config set advice.addEmbeddedRepo false"
 
-git clone : 모든 최신 소스를 받아오겠다.
-			remote + pull : 최초 연동
-git clone https://github.com/whenyouwerelittle/CLI_HOMEWORK
+SBS@A-12 MINGW64 /c/workspace/CLI_HOMEWORK (main)                                                                                                                
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   .giidea/vcs.xml
+        new file:   CLI_HOMEWORK                                                                                                                                 
+        modified:   src/main/java/RELEASE_NOTE/GIT_CHEATSHEET                                                                                                    
 
-git add .
-git commit -m "START OF CLI HOMEWORK"
+
+SBS@A-12 MINGW64 /c/workspace/CLI_HOMEWORK (main)                                                                                                                
+$ git log
+commit 74fbbac58ca16e395d7dadc4b5243b217d44b75c (HEAD -> main)
+Author: whenyouwerelittle <whenyouwerelittle@gmail.com>
+Date:   Thu Jul 17 17:33:09 2025 +0900
+
+    START OF CLI HOMEWORK
+
+SBS@A-12 MINGW64 /c/workspace/CLI_HOMEWORK (main)                                                                                                                
+$ git commit -m "START OF CLI HOMEWORK"
+[main 1a56871] START OF CLI HOMEWORK
+ 3 files changed, 25 insertions(+), 1 deletion(-)
+ create mode 160000 CLI_HOMEWORK
+
+SBS@A-12 MINGW64 /c/workspace/CLI_HOMEWORK (main)
+$ ls -al
+total 31
+drwxr-xr-x 1 SBS 197121    0 Jul 17 17:40 .
+drwxr-xr-x 1 SBS 197121    0 Jul 17 17:23 ..
+drwxr-xr-x 1 SBS 197121    0 Jul 17 17:54 .git
+-rw-r--r-- 1 SBS 197121  539 Jul 17 17:23 .gitignore
+drwxr-xr-x 1 SBS 197121    0 Jul 17 17:23 .gradle
+drwxr-xr-x 1 SBS 197121    0 Jul 17 18:08 .idea
+drwxr-xr-x 1 SBS 197121    0 Jul 17 17:40 CLI_HOMEWORK
+-rw-r--r-- 1 SBS 197121  272 Jul 17 17:23 build.gradle
+drwxr-xr-x 1 SBS 197121    0 Jul 17 17:23 gradle
+-rwxr-xr-x 1 SBS 197121 8070 Jul 17 17:23 gradlew
+-rw-r--r-- 1 SBS 197121 2763 Jul 17 17:23 gradlew.bat
+-rw-r--r-- 1 SBS 197121   33 Jul 17 17:23 settings.gradle
+drwxr-xr-x 1 SBS 197121    0 Jul 17 17:23 src
+
+SBS@A-12 MINGW64 /c/workspace/CLI_HOMEWORK (main)
+$ rm -r CLI_HOMEWORK
+rm: remove write-protected regular file 'CLI_HOMEWORK/.git/objects/pack/pack-9e73321137aa4a2dc6570737544fa407c0b97c5e.idx'? Y
+rm: remove write-protected regular file 'CLI_HOMEWORK/.git/objects/pack/pack-9e73321137aa4a2dc6570737544fa407c0b97c5e.pack'? Y
+rm: remove write-protected regular file 'CLI_HOMEWORK/.git/objects/pack/pack-9e73321137aa4a2dc6570737544fa407c0b97c5e.rev'? Y
+
+SBS@A-12 MINGW64 /c/workspace/CLI_HOMEWORK (main)
+$ ls
+build.gradle  gradle  gradlew  gradlew.bat  settings.gradle  src
+
+SBS@A-12 MINGW64 /c/workspace/CLI_HOMEWORK (main)
+$ ls -l
+total 14
+-rw-r--r-- 1 SBS 197121  272 Jul 17 17:23 build.gradle
+drwxr-xr-x 1 SBS 197121    0 Jul 17 17:23 gradle
+-rwxr-xr-x 1 SBS 197121 8070 Jul 17 17:23 gradlew
+-rw-r--r-- 1 SBS 197121 2763 Jul 17 17:23 gradlew.bat
+-rw-r--r-- 1 SBS 197121   33 Jul 17 17:23 settings.gradle
+drwxr-xr-x 1 SBS 197121    0 Jul 17 17:23 src
+
+SBS@A-12 MINGW64 /c/workspace/CLI_HOMEWORK (main)
+$ ls -al
+total 31
+drwxr-xr-x 1 SBS 197121    0 Jul 17 18:13 .
+drwxr-xr-x 1 SBS 197121    0 Jul 17 17:23 ..
+drwxr-xr-x 1 SBS 197121    0 Jul 17 17:54 .git
+-rw-r--r-- 1 SBS 197121  539 Jul 17 17:23 .gitignore
+drwxr-xr-x 1 SBS 197121    0 Jul 17 17:23 .gradle
+drwxr-xr-x 1 SBS 197121    0 Jul 17 18:08 .idea
+-rw-r--r-- 1 SBS 197121  272 Jul 17 17:23 build.gradle
+drwxr-xr-x 1 SBS 197121    0 Jul 17 17:23 gradle
+-rwxr-xr-x 1 SBS 197121 8070 Jul 17 17:23 gradlew
+-rw-r--r-- 1 SBS 197121 2763 Jul 17 17:23 gradlew.bat
+-rw-r--r-- 1 SBS 197121   33 Jul 17 17:23 settings.gradle
+drwxr-xr-x 1 SBS 197121    0 Jul 17 17:23 src
+
+
