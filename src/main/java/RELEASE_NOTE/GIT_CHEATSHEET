@@ -145,4 +145,42 @@ drwxr-xr-x 1 SBS 197121    0 Jul 17 17:23 gradle
 -rw-r--r-- 1 SBS 197121   33 Jul 17 17:23 settings.gradle
 drwxr-xr-x 1 SBS 197121    0 Jul 17 17:23 src
 
+SBS@A-12 MINGW64 /c/workspace/CLI_HOMEWORK (main)
+$ git add .
+
+SBS@A-12 MINGW64 /c/workspace/CLI_HOMEWORK (main)
+$ git commit -m "file and folder clean up"
+[main 5a8edd1] file and folder clean up
+ 2 files changed, 132 insertions(+), 9 deletions(-)
+ delete mode 160000 CLI_HOMEWORK
+
+
+SBS@A-12 MINGW64 /c/workspace/CLI_HOMEWORK (main)
+$ git push origin main
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 1.78 KiB | 1.78 MiB/s, done.
+Total 7 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/whenyouwerelittle/CLI_HOMEWORK
+   1a56871..5a8edd1  main -> main
+
+SBS@A-12 MINGW64 /c/workspace/CLI_HOMEWORK (main)
+$ git log
+commit 5a8edd199b3a8a586af02363b7cea2ae7732dc59 (HEAD -> main, origin/main, origin/HEAD)
+Author: whenyouwerelittle <whenyouwerelittle@gmail.com>
+Date:   Thu Jul 17 18:15:13 2025 +0900
+
+    file and folder clean up
+
+commit 1a568710c061dbae775a55ad15371e82f7881649
+Author: whenyouwerelittle <whenyouwerelittle@gmail.com>
+Date:   Thu Jul 17 17:54:57 2025 +0900
+
+    START OF CLI HOMEWORK
+
+commit 74fbbac58ca16e395d7dadc4b5243b217d44b75c
+Author: whenyouwerelittle <whenyouwerelittle@gmail.com>
 
